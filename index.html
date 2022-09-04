@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('T-USR5eV4-WJLLw0X')
+    </script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+</head>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<body>
+
+    <header class="head">
+            <ul class="navbar-nav">
+                <li><a href="#" id="overview" class="active" >Overview</a></li>
+                <li><a href="#" id="projects" >Projects</a></li>
+                <li><a href="#" id="contact" >Contact</a></li>
+                
+                <a href="https://drive.google.com/uc?export=download&id=1XvVrV2hxzggiGmlf1rccUKsk4zrmWzdE" id="download">download CV</a>
+            </ul>
+    </header>
+    <main class="main">
+        <div class="overview active"> 
+                <h1>About</h1>
+                <section class="about">
+                   
+                        <p>As a self-taught programmer, I have a special passion for software development . Primarily focused on front-end web development, but also with back-end expertise such as database in mongoDB. I have built several web projects and have experience in making responsive websites and simple to understand interfaces. 
+
+                        </p>
+                </section> 
+                <h1>Skills</h1>   
+                <section class="skills">
+
+                                   
+                    <h1>Programming Languages and Tools</h1>
+
+                    <ul>
+                        <li><i class="devicon-css3-plain"></i>&nbsp;&nbsp;Intermediate</li>
+                        <li><i class="devicon-discordjs-plain"></i>&nbsp;&nbsp;Basic</li>
+                        <li><i class="devicon-git-plain"></i>&nbsp;&nbsp;Basic</li>
+                        <li><i class="devicon-html5-plain"></i>&nbsp;&nbsp;Intermediate</li>
+                        <li><i class="devicon-javascript-plain"></i>&nbsp;&nbsp;Basic to Intermediate</li>
+                        <li><i class="devicon-jquery-plain"></i>&nbsp;&nbsp;Basic</li>
+                        <li><i class="devicon-mongodb-plain"></i>&nbsp;&nbsp;Basic</li>
+                        <li><i class="devicon-nodejs-plain"></i>&nbsp;&nbsp;Basic</li>
+                        <li><i class="devicon-pandas-original"></i>&nbsp;&nbsp;Basic to Intermediate</li>
+                        
+                    </ul>
+                    <h1>Languages</h1>
+                    <ul>
+                        <li>Basic English</li>
+                        <li>Native Portuguese</li>
+                    </ul>
+
+                </section>
+                <h1>Projects</h1>
+                <section class="Projects">
+                    
+                    <ul>
+                        <li>
+                            <h1>Timo-BOT</h1>
+                            <p> Created a Discord music bot in Node.js using the discord.js and distube API's to acess Youtube databases and play musics in a voice channel. The bot have multiple commands and interactions that are handled and stored using MongoDB</p>
+                            
+                        </li>
+                        <li>  <h1>HAPPY</h1>
+                              <p>Created a multiple page, responsible interface for a orphanage site that uses google maps API to show all the locations of the registered orphanages around the country. Each orphanage has a page showing the informations about and a section for contact</p>
+                        </li>
+                        <li> <h1>Starbucks Landing Page</h1>
+                            <p>Created a responsible and acessible landing page based on Starbucks company concept. The site has multiple sections and a carrousel menu builded on javascript</p>
+                        </li>
+                    </ul>
+                </section>
+                <h1>Education</h1>
+                <section class="Education">
+                    
+                    <p>Certificate as a chemical technician at CEFET-MG</p>
+                    <p>System Development with C# at SOS computers</p>
+                </section>
+        </div>
+       <div class="contact">
+          
+        <h1>Contact</h1>
+             <form onsubmit="SendEmail(); reset(); return false" id="form">
+                <label for="name">Name:</label>
+                <input type="text" name="from_name" id="from_name" placeholder="Type your full name" required>
+                <label for="email">Email:</label>
+                <input type="email"  name = "email "id="email" placeholder="example@gmail.com" required>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="+1 408 XXX XXXX" required>
+                <label for="message">Your Message:</label>
+                <textarea  id="message"  name="message" rows="10" placeholder="How can i help you?"></textarea>
+                <button type="submit" id="button">Send</button>
+             </form>
+             <section class="infos">
+                <img src="./images/profile.png" alt="" id="picture">
+                <h1>Pedro Henrique Candido Souza</h1>
+                <p><ion-icon name="mail-outline"></ion-icon>pedrohec.souza@gmail.com</p>
+                <p><ion-icon name="call-outline"></ion-icon>+55 31983720905</p>
+                <p><ion-icon name="location-outline"></ion-icon>Belo Horizonte, Minas Gerais, Brasil</p>
+             </section>
+        </div>
+       <div class="projects "><h1>Projects</h1>
+        <a href="https://github.com/kronolicodec/HAPPY"><img src="https://gh-card.dev/repos/kronolicodec/HAPPY.svg"></a>
+        <a href="https://github.com/kronolicodec/timo-bot"><img src="https://gh-card.dev/repos/kronolicodec/timo-bot.svg"></a>
+        <a href="https://github.com/kronolicodec/Starbucks"><img src="https://gh-card.dev/repos/kronolicodec/Starbucks.svg"></a>
+        </div>
+        <div class="download">
+           
+            <div class="row">
+               
+            </div>
+        </div>
+    </main>
+    <aside class="aside">
+        <img src="./images/profile.png" id = "profile" alt="">
+        <h3 id="name">Pedro Henrique</h3>
+        <p id = "nickname">@kronolitto</p>
+        <div class="social-media">
+            <ul >
+                <li><a href="#"><ion-icon name="location-outline"></ion-icon>   Belo Horizonte</a></li>
+                <li> <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>   Linkedin</a></li>
+                <li><a href="https://github.com/kronolicodec" target="_blank"><ion-icon name="logo-github"></ion-icon>   github</a></li>
+            </ul>
+            
+           
+            
+        </div>
+        <div class="organizations">
+         
+            <p>Organizations</p>
+            <a href="" class="cefet"><img src="./images/cefet-mg-logo_sm.webp" alt="cefet-logo"></a>
+        </div>
+    </aside>
+    <a id="myBtn" onclick="topFunction()">top</a>  
+    <script src="./index.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
