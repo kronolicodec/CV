@@ -210,7 +210,7 @@ form button:hover{
   /* Firefox */
   * {
     scrollbar-width: none;
-    scrollbar-color: #979595 #ffffff;
+    scrollbar-color: #979595 transparent;
   }
 
   /* Chrome, Edge, and Safari */
@@ -219,7 +219,7 @@ form button:hover{
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: transparent;
   }
 
   *::-webkit-scrollbar-thumb {
